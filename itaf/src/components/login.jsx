@@ -3,14 +3,12 @@ import './style/login.css';
 import './style/logo.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import axios from 'axios';
-// Put any other imports below so that CSS from your
-// components takes precedence over default styles.
 
 function LoginForm() {
   return (
-    <div className="container col-md-4 text-center">
+    <div className="Mycontainer col-md-4 text-center">
       <div className="heading">
-       Sign In
+       Login
       </div>
       <form action="" className="form">
         <input
@@ -33,21 +31,45 @@ function LoginForm() {
         />
         <br/>
         <br/>
-        <input className="login-button" type="button" value="Sign In" onClick={click}/>
+        <input className="login-button" type="button" value="Login" onClick={click}/>
     
         <span className="forgot-password">
           <a href="#"> <h5>Forgot Password </h5> </a>
         </span>
       </form>
+      <span className='passwordVal' id='validate'>  </span>
     </div>
   );
 }
-const click = ()=>
+const click = async ()=>
 {
   const email = document.getElementById('email').value;
   const password = document.getElementById('password').value;
-  console.log(email);
-  console.log(password);
+ try {
+  const details = {
+    id:8,
+    "contactNumber": "0774156255",
+  "companyUserId": 1,
+  "designationId": 1,
+  email: email,
+  status: "active"
+  }
+
+  //const loginPost = await axios.post('http://localhost:8092/automation-framework/api/v1/user/login',details);
+  //document.getElementById('validate').innerHTML = loginPost.data.message;
+  
+  //const loginGet = await axios.get('http://localhost:8092/automation-framework/api/v1/designation/user/1');
+  //console.log(JSON.stringify(loginGet.data.result));
+
+  //const loginDelete = await axios.delete('http://localhost:8092/automation-framework/api/v1/user/8');
+  //console.log(loginDelete.data.status);
+
+  //const loginPut = await axios.put('http://localhost:8092/automation-framework/api/v1/user',details);
+  //console.log(loginPut.data.status);
+
+ } catch (error) {
+  console.error(error)
+ }
 }
 
 export default LoginForm;

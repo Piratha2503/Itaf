@@ -7,7 +7,7 @@ grid-row-gap: 0px;
 .div1{
     grid-area: 2 / 2 / 3 / 3; 
 }
-.container {
+.Mycontainer {
     max-width: 350px;
     background: #F8F9FD;
     background: linear-gradient(0deg, rgb(255, 255, 255) 0%, rgb(244, 247, 251) 100%);
@@ -147,3 +147,8 @@ grid-row-gap: 0px;
     color: #0099ff;
     font-size: 9px;
   }
+  .passwordVal{
+    color: red;
+    font-size: large;
+  }
+  
