@@ -7,7 +7,7 @@ import ViewForm from './components/view';
 
 function App() {
   return (
-    <ViewForm/>  
+    <LoginForm/>  
   );
 }
 

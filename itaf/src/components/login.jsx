@@ -52,11 +52,11 @@ const click = async ()=>
   "companyUserId": 1,
   "designationId": 1,
   email: email,
-  status: "active"
+  password:password
   }
 
-  //const loginPost = await axios.post('http://localhost:8092/automation-framework/api/v1/user/login',details);
-  //document.getElementById('validate').innerHTML = loginPost.data.message;
+  const loginPost = await axios.post('http://localhost:8092/automation-framework/api/v1/user/login',details);
+  document.getElementById('validate').innerHTML = loginPost.data.message;
   
   //const loginGet = await axios.get('http://localhost:8092/automation-framework/api/v1/designation/user/1');
   //console.log(JSON.stringify(loginGet.data.result));
