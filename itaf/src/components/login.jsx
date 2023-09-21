@@ -48,7 +48,7 @@ const click = async ()=>
  try {
   const details = {
     id:8,
-    "contactNumber": "0774156255",
+  "contactNumber": "0774156255",
   "companyUserId": 1,
   "designationId": 1,
   email: email,
