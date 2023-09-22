@@ -6,13 +6,13 @@ import CreatePassword from './components/setpassword';
 import ViewForm from './components/view';
 import VerifyEmail from './components/emailVerify';
 import Failed from './components/error';
+import Emailcheck from './components/mailCheck';
+import Loading from './components/emailLoad';
 
 
 function App() {
   return (
-  
-    <VerifyEmail/>  
-    
+    <VerifyEmail/>
   );
 }
 
